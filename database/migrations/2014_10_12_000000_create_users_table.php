@@ -29,7 +29,13 @@ class CreateUsersTable extends Migration
             $table->string('password',100);
             $table->rememberToken();
             $table->timestamps();
+           
         });
+        // Schema::table('tbl_employee', function (Blueprint $table) {
+        //     $table->foreign('id_job')->references('id_job')->on('tbl_job');
+        //     $table->foreign('id_division')->references('id_division')->on('tbl_division');
+        // });
+
     }
 
     /**
